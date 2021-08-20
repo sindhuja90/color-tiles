@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sindhuja Sudhakar" />
+    <meta
+      name="description"
+      content="A puzzle game wherein users are required to move tiles to match the puzzle grid with the given random grid."
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="easy-style.css" />
+
+    <title>Color Tiles</title>
+  </head>
+  <body onload="setUp()">
+    <main>
+      <section class="grid game-tiles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="inner-grid"></div>
+        <div class="inner-grid"></div>
+        <div class="inner-grid"></div>
+        <div></div>
+        <div></div>
+        <div class="inner-grid"></div>
+        <div class="inner-grid"></div>
+        <div class="inner-grid"></div>
+        <div></div>
+        <div></div>
+        <div class="inner-grid"></div>
+        <div class="inner-grid"></div>
+        <div class="inner-grid"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+
+      <section class="right">
+        <p class="start">Start playing <span class="username"></span>! ⏳</p>
+
+        <section class="grid random-pattern">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+
+        <p id="right">Number of Moves 🔢: <span class="moves"></span></p>
+        <p class="high-score">High Score 💯:</p>
+        <span class="score"></span>
+      </section>
+    </main>
+
+    <div class="modal hidden">
+      <p>Congratulations! You won 🎉</p>
+      <p>No. of Moves 🔢: <span class="win-moves"></span></p>
+      <p>Time Taken ⌚: <span class="time-taken"></span></p>
+      <p>Score 💯: <span class="your-score"></span></p>
+      <button class="btn replay">Replay</button>
+      <a href="../index.html" class="btn">Main Menu</a>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="easy-script.js"></script>
+  </body>
+</html>
